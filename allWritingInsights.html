@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Devashya Sahu — All Writing & Insights</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="theme-toggle" id="theme-toggle" aria-hidden>
+    <button id="toggle-btn" title="Toggle theme">🌙 / ☀️</button>
+  </div>
+
+  <header id="hero" class="hero">
+    <canvas id="hero-canvas" aria-hidden></canvas>
+    <div class="hero-inner">
+      <h1 class="hero-title">All Writing & Insights</h1>
+      <p class="hero-sub">My thoughts, tutorials, and experiments on web development and design.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="blog" class="blog fade-in-on-scroll">
+      <div class="container">
+        <div class="blog-grid">
+          <article class="card">
+            <h4>How I built the Life Road Map</h4>
+            <p>Short summary & link to full case study (coming soon).</p>
+            <a class="btn small ghost" href="#0">Read</a>
+          </article>
+
+          <article class="card">
+            <h4>My thoughts on modern CSS</h4>
+            <p>Exploring CSS variables, grid, and modern layouts for web apps.</p>
+            <a class="btn small ghost" href="#0">Read</a>
+          </article>
+          
+          <article class="card">
+            <h4>A guide to canvas animations</h4>
+            <p>A step-by-step tutorial on building a dynamic starfield.</p>
+            <a class="btn small ghost" href="#0">Read</a>
+          </article>
+
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Devashya Sahu — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Devashya Sahu — Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css?v=4"></head>
+<body>
+
+  <div class="theme-toggle" id="theme-toggle" aria-hidden>
+    <button id="toggle-btn" title="Toggle theme">🌙 / ☀️</button>
+  </div>
+
+  <header id="hero" class="hero">
+    <canvas id="hero-canvas" aria-hidden></canvas>
+    <div class="hero-inner">
+      <h1 class="hero-title mono-typer" data-text="Hi, I'm Devashya Sahu — Web Developer & Creative Builder.">Hi, I'm Devashya Sahu — Web Developer & Creative Builder.</h1>
+      <p class="hero-sub">I build interactive storytelling experiences and useful web apps — WorkZone, Dronosour, Life Road Map.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#projects">View My Work 🚀</a>
+        <a class="btn secondary" href="#life-road-map">Explore Roadmap 📜</a>
+      </div>
+      <div class="hero-meta">Try the <strong>Day / Night</strong> toggle.</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="life-road-map" class="life-road-map fade-in-on-scroll">
+      <div class="lrm-container">
+        <h2 class="section-title">Timeline</h2>
+        <p class="section-sub">A timeline of learning, projects and milestones.</p>
+
+        <div class="timeline">
+          <div class="timeline-line"><div class="timeline-progress"></div></div>
+
+          <div class="timeline-items">
+            <article class="timeline-item">
+              <h3>2022 — Started HTML & CSS</h3>
+              <p>Built small websites and learned layout fundamentals.</p>
+            </article>
+
+            <article class="timeline-item">
+              <h3>2023 — JavaScript & Interactive UI</h3>
+              <p>Built dynamic frontends, learned DOM & canvas.</p>
+            </article>
+
+            <article class="timeline-item">
+              <h3>2024 — Python, Data Structures</h3>
+              <p>Learned algorithms & backend basics for robust apps.</p>
+            </article>
+
+            <article class="timeline-item">
+              <h3>2025 — Life Road Map & Experimental Projects</h3>
+              <p>Created storytelling experiences (parallax, starfields, toggles).</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects main-projects fade-in-on-scroll">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-sub">A showcase of my recent project.</p>
+
+        <div class="single-video-wrapper">
+            <video controls preload="metadata" poster="assets/images/Devashya-Sahu-—-Portfolio-09-19-2025_10_32_PM.png">
+                <source src="assets/videos/HULK'S WORK ZONE - Scissor Reveal.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <a class="btn" href="seemore.html">See All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog fade-in-on-scroll">
+      <div class="container">
+        <h2 class="section-title">Writing & Insights</h2>
+        <p class="section-sub">Notes about projects, tutorials and experiments.</p>
+
+        <div class="blog-grid">
+          <article class="card">
+            <h4>How I built the Life Road Map</h4>
+            <p>Short summary & link to full case study (coming soon).</p>
+            <a class="btn small ghost" href="allWritingInsights.html">Read</a>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <a class="btn" href="allWritingInsights.html">See All Writing</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact fade-in-on-scroll">
+      <div class="container">
+        <h2 class="section-title mono-text">> Say hello_</h2>
+        <p class="section-sub">Interested in working together or want the source code? Drop me a message.</p>
+
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="5" placeholder="Message..." required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </form>
+
+        <div id="confetti-root" aria-hidden></div>
+
+        <div class="contact-links">
+          <a href="https://github.com/Devashyasahu" target="_blank" rel="noopener">GitHub</a> •
+          <a href="https://linkedin.com/in/devashyasahu" target="_blank" rel="noopener">LinkedIn</a> •
+          <a href="mailto:youremail@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Devashya Sahu — Built with ❤️</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
